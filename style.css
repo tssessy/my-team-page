@@ -110,6 +110,18 @@ footer a {
 footer a:hover {
     border-bottom: 2px solid red;
 }
+@media screen and (max-width: 990px) {
+    .low {
+        margin-top: 0;
+    }
+    .crew:nth-child(2n+0) {
+        margin-top: 5rem;
+    }
+    .crew img {
+        width: 238px;
+    height: 340px;
+}
+}
 @media screen and (max-width: 650px) {
     header {
         flex-direction: column;
@@ -146,6 +158,9 @@ footer a:hover {
 }
 }
 @media screen and (max-width: 338px) {
+    .crew:nth-child(2n+0) {
+        margin-top: 0rem;
+    }
     .crew img {
         width: 180px;
     height: 257px;
