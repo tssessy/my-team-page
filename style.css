@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'PT Serif', serif;
+    background: #FAFAFA;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+h1 {
+    font-family: 'PT Serif', serif;
+    font-weight: 700;
+    font-size: 3.6rem;
+    line-height: 4.7rem;
+    letter-spacing: -0.045rem;
+}
+h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    padding-bottom: 1rem;
+}
+p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+}
+.vertical {
+    font-family: 'PT Serif', serif;
+    font-weight: 500;
+    letter-spacing: 0.10rem;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    writing-mode: vertical-rl; 
+    text-transform: uppercase ;;
+}
+header {
+    display: flex;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 3rem 9rem;
+
+}
+h1, .about-us {
+    flex-basis: 50%;
+}
+.about-us p {
+    padding: 0 1rem 0 4rem;
+}
+.about-us h2 {
+    padding-left: 4rem;
+}
+main {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 1rem 0 4rem 0;
+}
+section {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 8rem;
+    justify-content: center;
+}
+.crew {
+    position: relative;
+    padding: 0 2rem;   
+}
+.crew img {
+    width: 238px;
+    height: 340px;
+}
+.crew h3 {
+    padding-top: 1rem;
+}
+.crew .vertical {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.low {
+    margin-top: 10rem;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: #a9a9a9; 
+}
+footer p {
+    font-size: 1.2rem;
+}
+footer a {
+    text-decoration: none;
+    color: red;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+footer a:hover {
+    border-bottom: 2px solid red;
+}
+@media screen and (max-width: 650px) {
+    header {
+        flex-direction: column;
+        padding: 3rem 3rem;
+    }
+    .about-us p, .about-us h2 {
+        padding-left: 0;
+    }
+    section {
+        column-gap: 0;
+    }
+    
+    .crew img {
+        width: 180px;
+    height: 257px;
+}
+}
+@media screen and (max-width: 450px){
+    header {
+        padding: 3rem 1rem;
+    }
+    .crew {
+        padding-left: 0;
+    }
+    .low {
+        margin-top: 0;
+    }
+    .crew:nth-child(2n+0) {
+        margin-top: 5rem;
+    }
+    .crew img {
+        width: 150px;
+    height: 214px;
+}
+}
+@media screen and (max-width: 338px) {
+    .crew img {
+        width: 180px;
+    height: 257px;
+}
+}
